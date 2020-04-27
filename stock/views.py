@@ -7,7 +7,7 @@ def index(request):
     products=Product.objects.all() # Like SELECT * FROM
 #    html="<html><body>Home page</body></html>"
 #    return HttpResponse(html) 
-    return render(request,'frontend/index.html',{'Products':products})
+    return render(request,'frontend/index.html',{'products':products})
 
 
 def about(request):
